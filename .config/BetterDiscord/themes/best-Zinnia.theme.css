@@ -1,0 +1,39 @@
+//META{"name":"Zinnia Theme","description":"JD's Zinnia Theme :3","author":"JD","version":"Auto Update"}*//
+@import url("https://puckzxz.github.io/NotAnotherAnimeTheme/css/scsl.css");
+@import url("https://monstrousdev.github.io/themes/addons/user-tags.css");
+@import url("https://codedotspectra.github.io/themes/core/badges.css");
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/ServerColumns/ServerColumns.css');
+@import url('https://gibbu.github.io/BetterDiscord-Themes/RadialStatus/base.css');
+:root {
+/* --background-image: url('https://imgur.com/ysxxjGB.png'); */
+--background-image: linear-gradient(to right, rgba(0, 0, 0, .5),  rgba(0, 0, 0, .5)), url('https://imgur.com/ysxxjGB.png');
+--friends-icon: url('https://imgur.com/71V95uv.png');
+--friends-icon-position: center center;
+--friends-icon-zoom: 100%;
+--unread-server-animation: rainbow;
+--main-color: rgba(25,181,22,0.95);
+--main-transparency: rgba(198,75,199,0.2);
+--hover-list-bg-color: rgba(255, 255, 255, .15);
+--scroll-bar-color: #48ff00;
+--font-size: 16px;
+--selected-text-voice-color: rgba(54,232,13,0.95);
+--channel-hover-text-color: rgba(255,255,255,0.3);
+--unread-text-color: #72ede3;
+--user-popup-background: #000000;
+
+--rs-small-spacing: 2px;
+--rs-large-spacing: 3px;
+--rs-width: 2px;
+--rs-avatar-shape: 50%;
+--rs-online-color: #43b581;
+--rs-idle-color: #faa61a;
+--rs-dnd-color: #f04747;
+--rs-streaming-color: #643da7;
+--rs-offline-color: #636b75;
+--rs-invisible-color: #747f8d;
+
+--columns: 1;
+--guildsize: 50;
+--guildgap: 5;
+--aligndms: 1;
+}
