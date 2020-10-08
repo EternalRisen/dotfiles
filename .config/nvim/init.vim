@@ -10,6 +10,7 @@ filetype plugin indent on
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'vbe0201/vimdiscord'
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
