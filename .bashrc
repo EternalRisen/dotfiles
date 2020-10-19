@@ -5,12 +5,14 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+alias proton='./.local/share/Steam/steamapps/common/Proton\ 5.0/proton'
 alias neofetch='neofetch --color_blocks off'
 alias ls='ls --color=auto'
 alias shred='shred -fuzv -n 48'
 alias home='cd ~'
 PS1='[\u@\h \W]\$ '
 PATH="/home/jd/.local/bin:$PATH"
+export STEAM_COMPAT_DATA_PATH="$HOME/.proton"
 
 ################################################################################
 ##  FUNCTIONS                                                                 ##
