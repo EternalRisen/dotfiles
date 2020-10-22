@@ -58,7 +58,7 @@ exec --no-startup-id nm-applet
 exec bluetoothctl power on
 
 # Setup Background
-exec feh --bg-scale ~/Pictures/Avatars/zinniaxbrendan.jpg
+exec feh --bg-scale ~/.config/i3/Haruko.jpg
 
 # Lock Screen
 bindsym ctrl+$mod+l exec --no-startup-id sleep 1 && xset dpms force suspend
