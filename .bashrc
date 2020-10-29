@@ -11,7 +11,7 @@ alias ls='ls --color=auto'
 alias shred='shred -fuzv -n 48'
 alias home='cd ~'
 PS1='[\u@\h \W]\$ '
-PATH="/home/jd/.local/bin:$PATH"
+PATH="~/.local/bin:~/.emacs.d/bin:$PATH"
 export STEAM_COMPAT_DATA_PATH="$HOME/.proton"
 
 ################################################################################
