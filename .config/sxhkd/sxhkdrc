@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: ISC
+# Copyright (c) 2018-2020 Dawid Potocki
+
+# Screenlock
+super + Escape
+	~/.script/lock.sh
+
+# screenshot script
+Print
+	~/.script/screenshot.sh
+
+# screenshot without menu
+super + s
+	maim -s -u | xclip -selection clipboard -t image/png
+
+# audio
+XF86Audio{Lower,Raise}Volume
+	pamixer -{d,i} 1; \
+	[ "$(ps ax | grep -c "pkill -RTMIN+1 dwmblocks")" -lt 4 ] && pkill -RTMIN+1 dwmblocks
+

@@ -39,13 +39,13 @@ exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 # they are included here as an example. Modify as you see fit.
 
 # Enable Transparency
-exec --no-startup-id picom
+# exec --no-startup-id picom
 
 # Polybar
 exec --no-startup-id ~/.config/polybar/launch.sh
 
 # premid discord rich presence
-exec ~/.local/bin/premid
+# exec ~/.local/bin/premid
 
 # Remove pesky borders
 for_window [class=".*"] border pixel 0
@@ -62,10 +62,10 @@ exec --no-startup-id xss-lock ~/.script/lock.sh
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
 
 # Turn on Bluetooth
-exec bluetoothctl power on
+# exec bluetoothctl power on
 
 # Setup Background
 exec feh --bg-scale ~/.config/i3/Haruko.jpg
@@ -74,7 +74,7 @@ exec feh --bg-scale ~/.config/i3/Haruko.jpg
 bindsym ctrl+$mod+l exec --no-startup-id sleep 1 && xset dpms force suspend
 
 # optimus-manager things, comment out the line below if you don't use it, or if you use a Display Manager with optimus-manager
-exec prime-offload
+# exec prime-offload
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status

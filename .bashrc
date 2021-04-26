@@ -94,12 +94,12 @@ fi;
 # Set the terminal title and prompt.
 PS1="\[\033]0;\W\007\]"; # working directory base name
 PS1+="\[${bold}\]\n"; # newline
-PS1+="┌──\[${blue}\]\u"; # username
+PS1+="┌──\[$(tput setaf 205)\]\u"; # username
 PS1+="\[${white}\]@";
-PS1+="\[${violet}\]\h"; # host
+PS1+="\[$(tput setaf 81)\]\h"; # host
 PS1+="\[${white}\] in ";
-PS1+="\[${cyan}\]\w"; # working directory full path
-PS1+="\$(prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
+PS1+="\[$(tput setaf 201)\]\w"; # working directory full path
+PS1+="\$(prompt_git \"\[${white}\] on \[$(tput setaf 75)\]\" \"\[$(tput setaf 207)\]\")"; # Git repository details
 PS1+="${reset}\n";
 PS1+="└─\[${bold}${white}\]\$ \[${reset}\]"; # `$` (and reset color)
 export PS1;
